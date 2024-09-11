@@ -55,13 +55,13 @@ nav ul li:hover {
 }
 
 .first-section {
-  overflow: hidden;
   height: 800px;
   width: 100%;
   background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/03/tea_shop_41-1.jpg);
   background-position: top center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .first-section .content {
@@ -276,7 +276,8 @@ button {
 }
 
 .new-arrival .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-between;
 }
@@ -293,6 +294,7 @@ button {
 }
 
 .Tea_subscription {
+
   width: 100%;
   height: 900px;
   background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/03/tea_shop_03.jpg);
@@ -507,4 +509,28 @@ button {
   align-items: center;
 }
 
-@media screen and (max-width:991px) {}
+@media (max-width: 991px) {
+  #ham {
+    display: block;
+    color: #2ea3f2;
+    margin-top: 26px;
+    font-size: 1.4rem;
+  }
+
+  header {
+    padding-inline: 15px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .first-section {
+    width: 100%;
+    background-position: center center;
+  }
+
+  .new-arrival .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
