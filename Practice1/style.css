@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    padding-inline: 15px;
+}
+
+.logo {
+    padding: 25px;
+
+}
+
+.logo a {
+    font-size: 1.6rem;
+    color: black;
+}
+
+nav {
+    margin-top: 30px;
+    margin-right: 35px;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li:last-child {
+    font-size: 1.3rem;
+}
+
+.first-section {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), url(https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/restaurant-hero-02.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.first-section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    height: 50rem;
+}
+
+.first-section .content h4 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.first-section .content p {
+    text-align: center;
+    max-width: 700px;
+    color: #bababa;
+    font-size: 1.4rem;
+}
+
+.primary-button {
+    margin-top: 35px;
+    background-color: #c39d63;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.secondary-button {
+    margin-top: 20px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    letter-spacing: 0.2rem;
+    background: transparent;
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.second-section {
+    height: 100vh;
+    width: 100%;
+}
+
+.story {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    /* gap: 2rem; */
+}
+
+.left-story {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.left-story h6 {
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+    color: #bfbfbf;
+
+}
+
+.left-story h6::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 85px;
+    background-color: #c39d63;
+    margin-top: 20px;
+
+}
+
+.left-story h1 {
+    font-size: 3rem;
+}
+
+.left-story p {
+    margin-top: 30px;
+    width: 95%;
+    color: #939393;
+    font-size: 1.3rem;
+
+}
+
+.right-story {
+    display: flex;
+}
+
+.right-story img {
+    display: block;
+    height: 650px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.third-section {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: #f7f7f7;
+}
+
+.third-section .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.third-section .contents h6 {
+    margin-top: 60px;
+    font-size: 1.2rem;
+    color: #bfbfbf;
+    margin-bottom: 15px;
+}
+
+.third-section .contents h6::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 85px;
+    background-color: #c39d63;
+    margin: 10px auto;
+
+}
+
+.third-section .contents h1 {
+    margin: 15px auto;
+    font-size: 2.5rem;
+}
+
+.third-section .contents .description {
+    margin-top: 20px;
+    max-width: 750px;
+    font-size: 1.3rem;
+    color: #939393;
+}
+
+.fourth-section {
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+.fourth-section h6 {
+    margin-top: 70px;
+    color: #bfbfbf;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.fourth-section h6::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 55px;
+    background-color: #c39d63;
+    margin: 10px auto;
+}
+
+.fourth-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.fourth-section .desciption {
+    max-width: 650px;
+    margin: auto;
+    color: #bfbfbf;
+    font-size: 1.3rem;
+    line-height: 25px;
+    margin-bottom: 26px;
+}
+
+.fourth-section .row {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.fourth-section .row .col {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+}
+
+.fourth-section .row .col:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+}
+
+.fourth-section .row .col img {
+    display: block;
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.fourth-section .card-content {
+    background-color: #fff;
+    text-align: left;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.fourth-section .card-content h4 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.fourth-section .card-content p.category {
+    font-weight: bold;
+    color: #c39d63;
+    margin: 5px 0;
+}
+
+.fourth-section .card-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.testimonials {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.testimonials .row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonials .col {
+    flex-basis: 22%;
+    padding: 10px;
+}
+
+.testimonials h6 {
+    font-size: 1rem;
+    color: #bfbfbf;
+    margin-top: 40px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.testimonials h6::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 55px;
+    background-color: #c39d63;
+    margin: 10px auto;
+}
+
+.testimonials h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 3rem;
+}
+
+.testimonials .stars {
+    color: #c39d63;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonials h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonials .author {
+    font-size: 0.8rem;
+    color: #bfbfbf;
+    text-transform: uppercase;
+}
+
+.Testimonials h6::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 55px;
+    background-color: #c39d63;
+    margin: 10px auto;
+}
